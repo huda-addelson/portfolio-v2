@@ -93,7 +93,7 @@ const Form = () => {
           <TextArea
             label='Message'
             name='message'
-            placeholder="Assalamu'alaikum..."
+            placeholder='Hello Khoirul Huda...'
             onChange={() => ''}
           />
         </div>
