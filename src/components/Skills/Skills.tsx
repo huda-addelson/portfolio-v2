@@ -25,7 +25,7 @@ const About = () => {
         className='mb-8 w-screen scroll-mt-8 bg-base-100 py-16 text-base-content'
         id='skills'
       >
-        <div className='container mx-auto space-y-10 px-6 md:h-[52rem] lg:h-[60rem] md:px-12 lg:px-56'>
+        <div className='container mx-auto space-y-10 px-6 md:h-[52rem] md:px-12 lg:h-[60rem] lg:px-56'>
           {/* title */}
           <motion.div
             variants={variants}
@@ -47,7 +47,7 @@ const About = () => {
               {category.map((value) => (
                 <a
                   onClick={() => handleTabClick(value)}
-                  className={`tab tab-bordered text-base md:text-lg ${
+                  className={`tab-bordered tab text-base md:text-lg ${
                     activeTab === value && 'tab-active'
                   } shrink-0 space-x-2 transition-all duration-500 umami--click--${value.replace(
                     /\s+/g,
@@ -56,7 +56,7 @@ const About = () => {
                   key={value}
                 >
                   <span>{value}</span>
-                  <span className={`badge badge-outline badge-sm`}>
+                  <span className={`badge-outline badge badge-sm`}>
                     {skills.filter((e) => e.type === value).length}
                   </span>
                 </a>

@@ -5,9 +5,9 @@ import { useEffect, useState } from 'react';
 
 import { variants } from '@/animations/variants';
 
+import styles from './Hero.module.css';
 import GradientText from '../GradientText';
 import SocialMediaIcons from '../SocialMediaIcons';
-import styles from './Hero.module.css';
 
 const Hero = () => {
   const [scrollY, setScrollY] = useState<number>(0);
@@ -43,10 +43,10 @@ const Hero = () => {
               className='lg:col-span-3'
             >
               <h1 className='text-2xl font-bold md:text-4xl'>Hi, my name is</h1>
-              <h1 className=' bg-gradient-to-br from-sky-400 to-blue-700 bg-clip-text py-1 md:py-2 text-2xl font-bold text-transparent md:text-5xl lg:text-6xl'>
+              <h1 className=' bg-gradient-to-br from-sky-400 to-blue-700 bg-clip-text py-1 text-2xl font-bold text-transparent md:py-2 md:text-5xl lg:text-6xl'>
                 Muhammad Khoirul Huda
               </h1>
-              <p className='pt-1 md:pt-2 pb-3 md:pb-4 font-medium md:text-xl'>
+              <p className='pb-3 pt-1 font-medium md:pb-4 md:pt-2 md:text-xl'>
                 I'm a{' '}
                 <GradientText
                   from='from-rose-400'
@@ -67,21 +67,22 @@ const Hero = () => {
                   }}
                 />
               </div>
-              <Link href='https://drive.google.com/file/d/1NJcXYr5SZNkxt03KKaiDNNYoc2_cCWBj/view?usp=sharing'       className='flex justify-center items-center px-4 py-2 font-medium tracking-wide text-white capitalize transition-colors duration-200 transform bg-blue-500 rounded-md hover:bg-blue-600 focus:outline-none focus:ring focus:ring-blue-300 focus:ring-opacity-80 mt-6 space-x-2 w-fit'
-                  target='_blank'>
-           
-                  <svg
-                    xmlns='http://www.w3.org/2000/svg'
-                    width='24'
-                    height='24'
-                    viewBox='0 0 24 24'
-                    fill='currentColor'
-                    className='h-5 w-5'
-                  >
-                    <path d='M19.479 10.092c-.212-3.951-3.473-7.092-7.479-7.092-4.005 0-7.267 3.141-7.479 7.092-2.57.463-4.521 2.706-4.521 5.408 0 3.037 2.463 5.5 5.5 5.5h13c3.037 0 5.5-2.463 5.5-5.5 0-2.702-1.951-4.945-4.521-5.408zm-7.479 6.908l-4-4h3v-4h2v4h3l-4 4z' />
-                  </svg>
-                  <span>Download CV</span>
-
+              <Link
+                href='https://drive.google.com/file/d/1NJcXYr5SZNkxt03KKaiDNNYoc2_cCWBj/view?usp=sharing'
+                className='mt-6 flex w-fit transform items-center justify-center space-x-2 rounded-md bg-blue-500 px-4 py-2 font-medium capitalize tracking-wide text-white transition-colors duration-200 hover:bg-blue-600 focus:outline-none focus:ring focus:ring-blue-300 focus:ring-opacity-80'
+                target='_blank'
+              >
+                <svg
+                  xmlns='http://www.w3.org/2000/svg'
+                  width='24'
+                  height='24'
+                  viewBox='0 0 24 24'
+                  fill='currentColor'
+                  className='h-5 w-5'
+                >
+                  <path d='M19.479 10.092c-.212-3.951-3.473-7.092-7.479-7.092-4.005 0-7.267 3.141-7.479 7.092-2.57.463-4.521 2.706-4.521 5.408 0 3.037 2.463 5.5 5.5 5.5h13c3.037 0 5.5-2.463 5.5-5.5 0-2.702-1.951-4.945-4.521-5.408zm-7.479 6.908l-4-4h3v-4h2v4h3l-4 4z' />
+                </svg>
+                <span>Download CV</span>
               </Link>
             </motion.div>
             <motion.div
@@ -114,9 +115,9 @@ const Hero = () => {
               version='1.1'
               xmlns='http://www.w3.org/2000/svg'
               // xmlns:xlink='http://www.w3.org/1999/xlink'
-              className={`-mb-80 md:-mb-72 lg:-mb-32 h-10 w-10 ${
+              className={`-mb-80 h-10 w-10 md:-mb-72 lg:-mb-32 ${
                 scrollY >= 140 && 'pointer-events-none opacity-0'
-              } transition-all duration-500 [fill-rule:evenodd] [clip-rule:evenodd] [stroke-linecap:round] [stroke-linejoin:round] [stroke-miterlimit:1.5] cursor-pointer`}
+              } cursor-pointer transition-all duration-500 [clip-rule:evenodd] [fill-rule:evenodd] [stroke-linecap:round] [stroke-linejoin:round] [stroke-miterlimit:1.5]`}
             >
               <path
                 id='wheel'

@@ -32,7 +32,7 @@ const Contact = () => {
           >
             Contact
           </motion.div>
-          <div className='flex flex-col items-start space-y-6 md:flex-row md:space-y-0 md:space-x-6'>
+          <div className='flex flex-col items-start space-y-6 md:flex-row md:space-x-6 md:space-y-0'>
             {/* info contact */}
             <div className='flex w-full flex-col space-y-6 md:w-5/12'>
               {contacts.map((value) => (
@@ -42,7 +42,7 @@ const Contact = () => {
               ))}
             </div>
             {/* end of info contact */}
-            <div className='divider before:bg-base-300/20 after:bg-base-300/20 md:divider-horizontal'></div>
+            <div className='divider md:divider-horizontal before:bg-base-300/20 after:bg-base-300/20'></div>
             <Form />
           </div>
         </div>

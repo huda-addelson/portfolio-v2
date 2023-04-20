@@ -5,7 +5,7 @@ const Card = ({ title, location, time, jurusan, children }: ICardProps) => {
     <div className='card w-full bg-base-100 text-base-content shadow-xl transition-all duration-500 hover:bg-base-200'>
       <div className='card-body'>
         <h2 className='card-title -mt-2 text-lg font-black'>{title}</h2>
-        <div className='space-y-2 font-medium md:-my-2 md:flex md:items-center md:space-y-0 md:space-x-2'>
+        <div className='space-y-2 font-medium md:-my-2 md:flex md:items-center md:space-x-2 md:space-y-0'>
           <div className='flex flex-col'>
             <p className='font-bold'>{location}</p>
             {jurusan && (

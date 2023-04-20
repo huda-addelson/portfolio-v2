@@ -3,7 +3,6 @@ import { useEffect, useState } from 'react';
 import { handleDrawer } from '@/lib/scroll-to-section/scroll-to-section';
 
 import { menu } from '../Layout/data';
-import Icon from './Icon';
 
 const Navbar = () => {
   const [scrollY, setScrollY] = useState<number>(0);

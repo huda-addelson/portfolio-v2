@@ -9,19 +9,20 @@ const SocialMediaIcons = ({ ...rest }) => {
       {data.map((value) => {
         return (
           <div className='tooltip' data-tip={value.title} key={value.title}>
-            <Link href={value.link} target='_blank'
-                className={`umami--click--${value.title}-link`}>
-
-                <svg
-                  xmlns='http://www.w3.org/2000/svg'
-                  width='24'
-                  height='24'
-                  viewBox='0 0 24 24'
-                  className='fill-current [fillRule:evenodd] [clipRule:evenodd] [strokeLinejoin:round] [strokeMiterlimit:1.41421]'
-                >
-                  <path d={value.icon} />
-                </svg>
-
+            <Link
+              href={value.link}
+              target='_blank'
+              className={`umami--click--${value.title}-link`}
+            >
+              <svg
+                xmlns='http://www.w3.org/2000/svg'
+                width='24'
+                height='24'
+                viewBox='0 0 24 24'
+                className='fill-current [clipRule:evenodd] [fillRule:evenodd] [strokeLinejoin:round] [strokeMiterlimit:1.41421]'
+              >
+                <path d={value.icon} />
+              </svg>
             </Link>
           </div>
         );

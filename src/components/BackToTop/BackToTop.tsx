@@ -15,11 +15,11 @@ export function BackToTop() {
   return (
     <div className='fixed bottom-8 right-8 lg:right-12'>
       <button
-        className={`inline-block p-3 bg-base-100 text-blue-500 border border-blue-500 rounded-full hover:text-white hover:bg-blue-500 active:bg-blue-400 focus:outline-none focus:ring transition-all duration-500 ease-in-out 
+        className={`inline-block rounded-full border border-blue-500 bg-base-100 p-3 text-blue-500 transition-all duration-500 ease-in-out hover:bg-blue-500 hover:text-white focus:outline-none focus:ring active:bg-blue-400 
         ${
           scrollY >= 100 && !isMenuOpened
             ? 'opacity-1'
-            : 'opacity-0 pointer-events-none'
+            : 'pointer-events-none opacity-0'
         }`}
         onClick={() => handleDrawer('#hero')}
       >

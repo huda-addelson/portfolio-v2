@@ -4,8 +4,8 @@ import Link from 'next/link';
 
 import { variants } from '@/animations/variants';
 
-import GradientText from '../GradientText';
 import { about } from './data';
+import GradientText from '../GradientText';
 
 const About = () => {
   return (

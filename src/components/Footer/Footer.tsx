@@ -4,9 +4,6 @@ import { handleDrawer } from '@/lib/scroll-to-section/scroll-to-section';
 
 import { menu } from '../Layout/data';
 import socialMedia from '../SocialMediaIcons/data';
-import Chart from './Chart';
-import Money from './Money';
-import Visitors from './Visitors';
 
 const Footer = () => {
   const currentYear = new Date().getFullYear();
@@ -14,7 +11,7 @@ const Footer = () => {
   return (
     <div className='w-screen bg-slate-800'>
       <div className='container mx-auto px-6 md:px-12 lg:px-56'>
-        <div className='grid grid-cols-1 md:grid-cols-4 text-slate-200 gap-6 pt-12 pb-3'>
+        <div className='grid grid-cols-1 gap-6 pb-3 pt-12 text-slate-200 md:grid-cols-4'>
           {/* Coming Soon */}
           {/* <div className='space-y-4 mb-4 md:mb-0 md:col-span-2 md:mr-10 lg:mr-24'>
             <div className='space-y-1 '>
@@ -50,13 +47,13 @@ const Footer = () => {
             </div>
           </div> */}
           <div className='space-y-1'>
-            <p className='font-bold text-lg underline decoration-wavy underline-offset-2 decoration-1'>
+            <p className='text-lg font-bold underline decoration-wavy decoration-1 underline-offset-2'>
               Quick links
             </p>
             {menu.map((value) => {
               return (
                 <p
-                  className='text-slate-400 w-fit cursor-pointer'
+                  className='w-fit cursor-pointer text-slate-400'
                   key={value.title}
                   onClick={() => handleDrawer(value.to)}
                 >
@@ -66,22 +63,25 @@ const Footer = () => {
             })}
           </div>
           <div className='space-y-1'>
-            <p className='font-bold text-lg underline decoration-wavy underline-offset-2 decoration-1'>
+            <p className='text-lg font-bold underline decoration-wavy decoration-1 underline-offset-2'>
               Reach me out on
             </p>
             {socialMedia.map((value) => {
               return (
-                <Link href={value.link} key={value.title} className='text-slate-400 block w-fit' target='_blank'>
-
-                    {value.title}
-
+                <Link
+                  href={value.link}
+                  key={value.title}
+                  className='block w-fit text-slate-400'
+                  target='_blank'
+                >
+                  {value.title}
                 </Link>
               );
             })}
           </div>
         </div>
         <div className='divider before:bg-slate-300/10 after:bg-slate-300/10'></div>
-        <div className='mt-2 mb-6 space-y-2 md:space-y-0 flex flex-col md:flex-row md:justify-between items-center'>
+        <div className='mb-6 mt-2 flex flex-col items-center space-y-2 md:flex-row md:justify-between md:space-y-0'>
           <p className='text-xs font-semibold text-slate-400'>
             © {currentYear} M Khoirul Huda • All Rights Reserved
           </p>

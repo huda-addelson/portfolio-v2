@@ -1,3 +1,4 @@
+import { List, Text, Timeline } from '@mantine/core';
 import {
   CategoryScale,
   Chart as ChartJS,
@@ -11,21 +12,10 @@ import {
   Tooltip,
 } from 'chart.js';
 import { motion } from 'framer-motion';
-import { useEffect, useRef, useState } from 'react';
 
 import { variants } from '@/animations/variants';
 
-import Card from './Card';
-import {
-  chartKuliahOptions,
-  chartSMKOptions,
-  ips,
-  nilaiSemester,
-} from './data';
-
-import { List, Text, Timeline } from '@mantine/core';
 import { education, workExperience } from './workExperience';
-import { Chart } from 'react-chartjs-2';
 
 ChartJS.register(
   LineController,
@@ -41,46 +31,6 @@ ChartJS.register(
 ChartJS.defaults.color = '#708090';
 
 const Resume = () => {
-  const chartKuliahref = useRef<ChartJS>(null);
-  const chartSMKref = useRef<ChartJS>(null);
-  const [kuliahDataSets, setKuliahDataSets] = useState({});
-  const [SMKDataSets, setSMKDataSets] = useState({});
-
-  useEffect(() => {
-    const chart = chartKuliahref.current;
-    if (chart) {
-      setKuliahDataSets({
-        backgroundColor: createGradient(chart.ctx),
-        fill: true,
-        tension: 0.4,
-      });
-    }
-
-    const chartSMK = chartSMKref.current;
-    if (chartSMK) {
-      setSMKDataSets({
-        backgroundColor: createGradient(chartSMK.ctx),
-        fill: true,
-        tension: 0.4,
-      });
-    }
-  }, []);
-
-  const createSemesterArray = (numberOfSemester: number) => {
-    const array: string[] = [];
-    for (let index = 1; index <= numberOfSemester; index++) {
-      array.push(String(index));
-    }
-    return array;
-  };
-
-  const createGradient = (ctx: CanvasRenderingContext2D) => {
-    const gradient = ctx.createLinearGradient(0, 0, 0, 150);
-    gradient.addColorStop(0, 'rgba(59, 130, 246, 1)');
-    gradient.addColorStop(1, 'rgba(59, 130, 246, 0)');
-    return gradient;
-  };
-
   return (
     <div className='w-screen'>
       <svg

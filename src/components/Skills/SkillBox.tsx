@@ -23,10 +23,10 @@ const SkillBox = ({
     viewport={{ once: true }}
   >
     <div
-      className={`space-y-2 rounded-2xl bg-base-200 p-8 lg:p-10 shadow shadow-base-content/20 transition duration-500 hover:bg-base-300 w-full aspect-square flex justify-center items-center relative`}
+      className={`relative flex aspect-square w-full items-center justify-center space-y-2 rounded-2xl bg-base-200 p-8 shadow shadow-base-content/20 transition duration-500 hover:bg-base-300 lg:p-10`}
     >
       {isMainSkill && (
-        <div className='absolute top-3 left-3'>
+        <div className='absolute left-3 top-3'>
           <svg
             xmlns='http://www.w3.org/2000/svg'
             width='15'
@@ -51,7 +51,7 @@ const SkillBox = ({
         <img
           src={`/icons/${icon}`}
           alt={title}
-          className={`object-contain h-20 md:h-22 lg:h-24`}
+          className={`md:h-22 h-20 object-contain lg:h-24`}
         />
       ) : (
         // <img

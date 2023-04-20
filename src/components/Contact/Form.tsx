@@ -1,21 +1,18 @@
-import axios from 'axios';
+import emailjs from '@emailjs/browser';
 import { motion } from 'framer-motion';
-import { ChangeEvent, FormEvent, useRef, useState } from 'react';
+import { useRef } from 'react';
 import { toast } from 'react-toastify';
 
 import { variants } from '@/animations/variants';
-import { trackEvent } from '@/lib/analytics/trackEvent';
 
-import { errorHandling } from './errorHandling';
 import InputForm from './InputForm';
 import TextArea from './TextArea';
-import emailjs from '@emailjs/browser';
 
 const Form = () => {
   // const [name, setName] = useState<string>();
   // const [email, setEmail] = useState<string>();
   // const [message, setMessage] = useState<string>();
-  const [isLoading, setIsLoading] = useState<boolean>(false);
+  // const [isLoading, setIsLoading] = useState<boolean>(false);
   const form = useRef<any>();
 
   // Send using API
@@ -51,7 +48,7 @@ const Form = () => {
         'o6uad8JIRLp21SZNI'
       )
       .then(
-        (result) => {
+        () => {
           toast.success('Message has been sent, thank you for reaching me out');
         },
         (error) => {
@@ -103,9 +100,7 @@ const Form = () => {
         <div className='w-full'>
           <button
             type='submit'
-            className={`btn w-full md:w-fit ${
-              isLoading && 'loading pointer-events-none opacity-50'
-            } no-animation transition-all duration-500`}
+            className={`no-animation btn w-full transition-all duration-500 md:w-fit`}
           >
             Send Message
           </button>

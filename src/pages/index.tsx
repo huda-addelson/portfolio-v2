@@ -12,10 +12,9 @@ import Hero from '@/components/Hero';
 import Layout from '@/components/Layout';
 import MetaTags from '@/components/MetaTags/MetaTags';
 import Projects from '@/components/Projects/Projects';
-import Skills from '@/components/Skills/Skills';
-
-import 'react-toastify/dist/ReactToastify.min.css';
 import Resume from '@/components/Resume/Resume';
+import Skills from '@/components/Skills/Skills';
+import 'react-toastify/dist/ReactToastify.min.css';
 
 const Home = () => {
   useEffect(() => {
