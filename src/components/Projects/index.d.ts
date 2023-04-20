@@ -29,10 +29,9 @@ export interface IProjectCard {
 
 export enum ProjectType {
   WEB = 'Website',
-  BOT = 'Bot',
-  CLI = 'CLI',
-  API = 'API',
-  MISC = 'Misc',
+  // BOT = 'Bot',
+  // CLI = 'CLI',
+  // API = 'API',
 }
 
 export interface Project {

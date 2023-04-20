@@ -53,7 +53,7 @@ const Hero = () => {
                   to='to-violet-600'
                   style='inline font-semibold'
                 >
-                  Junior Front End Developer
+                  Front End Developer
                 </GradientText>{' '}
                 from Jawa Tengah, Indonesia
               </p>

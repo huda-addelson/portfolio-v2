@@ -73,13 +73,13 @@ const About = () => {
                 >
                   Muhammad Khoirul Huda{' '}
                 </GradientText>
-                . I am a Junior Front End Developer, Software Engineer
-                Enthusiast. My passion in programming is very high, I like to
-                learn about new technologies. I am proficient in using HTML,
-                CSS, Javascript, Git, and framework technologies such as React
-                JS, Tailwindcss, Material Ui . I honed my skills by working on
-                projects and taking online courses. I am ready to accept job
-                offers remotely or onsite.
+                . I am a Front End Developer, Software Engineer Enthusiast. My
+                passion in programming is very high, I like to learn about new
+                technologies. I am proficient in using HTML, CSS, Javascript,
+                Git, and framework technologies such as React JS, Tailwindcss,
+                Material Ui . I honed my skills by working on projects and
+                taking online courses. I am ready to accept job offers remotely
+                or onsite.
               </p>
               {about.description.map((value, i) => {
                 let arr: string[] = [];
