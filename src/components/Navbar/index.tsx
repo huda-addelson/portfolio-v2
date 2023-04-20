@@ -7,13 +7,13 @@ import Icon from './Icon';
 
 const Navbar = () => {
   const [scrollY, setScrollY] = useState<number>(0);
-  const [theme, setTheme] = useState('light');
+  const [theme, setTheme] = useState<string>('light');
   const toggleTheme = () => {
     setTheme(theme === 'dracula' ? 'light' : 'dracula');
   };
 
   useEffect(() => {
-    document.querySelector('html').setAttribute('data-theme', theme);
+    document.querySelector('html')?.setAttribute('data-theme', theme);
   }, [theme]);
 
   useEffect(() => {
