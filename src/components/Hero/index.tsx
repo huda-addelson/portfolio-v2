@@ -68,7 +68,7 @@ const Hero = () => {
                 />
               </div>
               <Link
-                href='https://drive.google.com/file/d/1NJcXYr5SZNkxt03KKaiDNNYoc2_cCWBj/view?usp=sharing'
+                href='https://drive.google.com/file/d/1pLETk6hryzpxN36PoX8ORMowYT1MvTrn/view?usp=sharing'
                 className='mt-6 flex w-fit transform items-center justify-center space-x-2 rounded-md bg-blue-500 px-4 py-2 font-medium capitalize tracking-wide text-white transition-colors duration-200 hover:bg-blue-600 focus:outline-none focus:ring focus:ring-blue-300 focus:ring-opacity-80'
                 target='_blank'
               >
