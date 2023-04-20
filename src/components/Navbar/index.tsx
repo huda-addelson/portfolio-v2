@@ -49,14 +49,6 @@ const Navbar = () => {
           </svg>
         </label>
       </div>
-      {/* <div
-        className={`flex-1 items-center space-x-1 text-xl font-extrabold transition-all duration-500 md:ml-2 ${
-          scrollY <= 140 && 'opacity-0'
-        }`}
-      >
-        <Icon />
-        <span>TFKHDYT</span>
-      </div> */}
       <div className='hidden flex-none md:block'>
         <ul className='menu menu-horizontal'>
           {/* Navbar menu content here */}

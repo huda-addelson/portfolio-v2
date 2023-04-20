@@ -2,7 +2,7 @@ export default {
   header: 'KHOIRUL HUDA - Portfolio Website',
   title: 'KHOIRUL HUDA - Portfolio Website',
   favicon: '/favicon.ico',
-  link: 'https://www.tfkhdyt.my.id',
+  link: 'https://portfolio-huda-addelson.vercel.app/',
   deskripsi:
     "Hi everyone, my name is M Khoirul Huda. I'm a Junior Full Stack Developer, Computer Science Student, YouTuber, Free/Libre and Open Source Software Enthusiast, and Google-fu.",
   thumbnail: '/thumbnail-720.png',

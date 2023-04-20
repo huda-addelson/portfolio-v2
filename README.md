@@ -5,7 +5,6 @@
   <p align="center">
     Portfolio website that I built using my current preferred tech stack
     <br />
-    <!-- <a href="https://github.com/tfkhdyt/web-portfolio"><strong>Explore the docs »</strong></a> -->
     <a href="https://portfolio-huda-addelson.vercel.app/">View Demo</a>
   </p>
 </div>
