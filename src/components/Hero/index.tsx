@@ -86,7 +86,6 @@ const Hero = () => {
               </Link>
             </motion.div>
             <motion.div
-              variants={variants}
               initial='fromBottom'
               animate='toTop'
               className='hidden md:flex lg:col-span-2'
@@ -95,10 +94,8 @@ const Hero = () => {
                 src='/illustration3.svg'
                 height={500}
                 width={500}
-                objectFit='scale-down'
                 alt='scrolldown'
               />
-              {/* <img src='/illustration3.svg' className='pointer-events-none' /> */}
             </motion.div>
           </div>
           <motion.div
@@ -114,7 +111,6 @@ const Hero = () => {
               viewBox='0 0 247 390'
               version='1.1'
               xmlns='http://www.w3.org/2000/svg'
-              // xmlns:xlink='http://www.w3.org/1999/xlink'
               className={`-mb-80 h-10 w-10 md:-mb-72 lg:-mb-32 ${
                 scrollY >= 140 && 'pointer-events-none opacity-0'
               } cursor-pointer transition-all duration-500 [clip-rule:evenodd] [fill-rule:evenodd] [stroke-linecap:round] [stroke-linejoin:round] [stroke-miterlimit:1.5]`}
@@ -132,25 +128,6 @@ const Hero = () => {
                 stroke='currentColor'
               />
             </svg>
-
-            {/*
-            <svg
-              xmlns='http://www.w3.org/2000/svg'
-              className={`-mb-80 md:-mb-32 h-10 w-10 animate-bounce ${
-                scrollY >= 140 && 'pointer-events-none opacity-0'
-              } transition-all duration-500`}
-              fill='none'
-              viewBox='0 0 24 24'
-              stroke='currentColor'
-            >
-              <path
-                strokeLinecap='round'
-                strokeLinejoin='round'
-                strokeWidth={2}
-                d='M19 14l-7 7m0 0l-7-7m7 7V3'
-              />
-            </svg>
-            */}
           </motion.div>
         </div>
       </div>
