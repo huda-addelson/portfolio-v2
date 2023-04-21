@@ -86,6 +86,7 @@ const Hero = () => {
               </Link>
             </motion.div>
             <motion.div
+              variants={variants}
               initial='fromBottom'
               animate='toTop'
               className='hidden md:flex lg:col-span-2'
