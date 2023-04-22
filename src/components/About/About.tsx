@@ -42,16 +42,16 @@ const About = () => {
                 viewport={{ once: true }}
                 className='avatar relative flex w-2/5 cursor-pointer items-center justify-center md:w-3/5'
               >
-                <div className='group z-10 aspect-square h-fit w-full rounded-md border-2 border-red-800 bg-white p-2 md:p-4'>
+                <div className='group z-10 aspect-square h-fit w-full rounded-md border-2 border-blue-900 bg-white p-2 md:p-4'>
                   <Image
-                    src='/profile.jpg'
+                    src='/profile-web.jpg'
                     width={500}
                     height={500}
                     className='object-top transition-all duration-500 ease-in-out  group-hover:translate-x-0.5 group-hover:scale-125 md:group-hover:translate-x-2 '
                     alt='about'
                   />
                 </div>
-                <div className='absolute -right-2 top-2 h-full w-full rounded-md bg-red-900 md:-right-4 md:top-4 md:rounded-2xl'></div>
+                <div className='absolute -right-2 top-2 h-full w-full rounded-md bg-blue-900 md:-right-3 md:top-3 md:rounded-lg'></div>
               </motion.div>
             </div>
             <motion.div
@@ -81,33 +81,11 @@ const About = () => {
                 taking online courses. I am ready to accept job offers remotely
                 or onsite.
               </p>
-              {about.description.map((value, i) => {
-                let arr: string[] = [];
-                if (i == 3) {
-                  arr = value.split('|');
-                  return (
-                    <div className='inline' key={i}>
-                      {arr[0]}
-                      <span>
-                        and here's my{' '}
-                        <Link
-                          href='https://youtube.com/playlist?list=PLN3wrmCuWZNHsNley2YK7G7KxU0ga5ESB'
-                          className='umami--click--music-playlist-link decoration-3 underline decoration-yellow-400 decoration-dotted underline-offset-4 transition-all duration-500 hover:font-bold hover:text-yellow-400'
-                          target='_blank'
-                        >
-                          music playlist.
-                        </Link>
-                      </span>
-                      {arr[1]}
-                    </div>
-                  );
-                }
-                return (
-                  <span key={i}>
-                    <p>{value}</p>
-                  </span>
-                );
-              })}
+              {about.description.map((value, i) => (
+                <span key={i}>
+                  <p>{value}</p>
+                </span>
+              ))}
             </motion.div>
           </div>
         </div>
