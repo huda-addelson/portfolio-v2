@@ -29,7 +29,7 @@ const education: IEducation[] = [
     title: 'Senior High School',
     univ: 'SMK NU Alhidayah',
     type: 'Computer and Network Engineering',
-    timePeriod: '2014-2017',
+    timePeriod: '2014 - 2017',
   },
 ];
 
