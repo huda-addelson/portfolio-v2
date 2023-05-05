@@ -5,7 +5,7 @@ export const contacts: IContactSection[] = [
   {
     icon: EmailIcon,
     title: 'Email',
-    content: 'hudaaddelson@gmail.com',
+    content: 'khoirulhuda2299@gmail.com',
   },
   {
     icon: TelegramIcon,

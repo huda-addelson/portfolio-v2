@@ -5,15 +5,18 @@ const workExperience: IWorkExperience[] = [
     name: 'Refactory - Yogyakarta, Indonesia.',
     type: 'Junior Software Engineer • Full-time',
     tasks: [
-      '• Develop Mobile App using framework Flutter, React Native',
-      '• Develop Front End Web using framework React, Next & Vue',
+      '• Develop Front End Web using framework React, Next & Vue.',
+      '• Develop Admin Dashboard, added new features',
     ],
     timePeriod: 'Nov 2022 - Jan 2023',
   },
   {
     name: 'Refactory - Yogyakarta, Indonesia.',
     type: 'Software Engineer Intern • Full-time',
-    tasks: ['•  Develop Front End using React, Next, & Vue'],
+    tasks: [
+      '•  Develop Front End Web using framework React, Next & Vue.',
+      '•	Develop Point of Sales System, fixed bugs in features',
+    ],
     timePeriod: 'Aug 2022 - Nov 2022',
   },
 ];

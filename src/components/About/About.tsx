@@ -71,15 +71,16 @@ const About = () => {
                   to='bg-[#F9D949]'
                   style='inline font-bold'
                 >
-                  Muhammad Khoirul Huda{' '}
+                  Muhammad Khoirul Huda
                 </GradientText>
-                . I am a Front End Developer, Software Engineer Enthusiast. My
+                . I am a Front End Developer. Software Engineer Enthusiast. My
                 passion in programming is very high, I like to learn about new
-                technologies. I am proficient in using HTML, CSS, Javascript,
-                Git, and framework technologies such as React JS, Tailwindcss,
-                Material Ui . I honed my skills by working on projects and
-                taking online courses. I am ready to accept job offers remotely
-                or onsite.
+                technologies. I have 1+ years of experience in the field of
+                front end developer . I have experience and familiarity with
+                HTML, CSS, JavaScript and frameworks for building web
+                applications such as React JS, Next JS, Express, Node JS. I
+                honed my skills by working on projects and taking online
+                courses. I am ready to accept job offers remotely or onsite.
               </p>
               {about.description.map((value, i) => (
                 <span key={i}>
