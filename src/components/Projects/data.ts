@@ -38,4 +38,13 @@ export const projects: Project[] = [
     repoLink: 'https://github.com/huda-addelson/random-quote',
     demo: 'https://huda-addelson.github.io/random-quote/',
   },
+  {
+    name: 'TeamFlow',
+    description: 'slicing from figma to website',
+    type: ProjectType.WEB,
+    tags: ['Html', 'Tailwind CSs', 'Javascript', 'Next JS', 'Framer Motion'],
+    picture: 'team-flow.png',
+    repoLink: 'https://github.com/huda-addelson/slicing-teamflow',
+    demo: 'https://teamflow-huda.vercel.app/',
+  },
 ];
