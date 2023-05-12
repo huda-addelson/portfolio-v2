@@ -2,15 +2,6 @@ import { Project, ProjectType } from './index.d';
 
 export const projects: Project[] = [
   {
-    name: 'Resto Geprek',
-    description: 'slicing from figma to website',
-    type: ProjectType.WEB,
-    tags: ['Html', 'CSS'],
-    picture: 'resto-geprek.png',
-    repoLink: 'https://github.com/huda-addelson/RestoGeprek',
-    demo: 'https://huda-addelson.github.io/RestoGeprek/',
-  },
-  {
     name: 'Nurul Fata Web',
     description: 'a sholawat group website',
     type: ProjectType.WEB,
@@ -18,6 +9,24 @@ export const projects: Project[] = [
     picture: 'nufa.png',
     repoLink: '',
     demo: 'https://www.nurulfata.com/',
+  },
+  {
+    name: 'TeamFlow',
+    description: 'slicing from figma to website',
+    type: ProjectType.WEB,
+    tags: ['Html', 'Tailwind CSs', 'Javascript', 'Next JS', 'Framer Motion'],
+    picture: 'team-flow.png',
+    repoLink: 'https://github.com/huda-addelson/slicing-teamflow',
+    demo: 'https://teamflow-huda.vercel.app/',
+  },
+  {
+    name: 'Resto Geprek',
+    description: 'slicing from figma to website',
+    type: ProjectType.WEB,
+    tags: ['Html', 'CSS'],
+    picture: 'resto-geprek.png',
+    repoLink: 'https://github.com/huda-addelson/RestoGeprek',
+    demo: 'https://huda-addelson.github.io/RestoGeprek/',
   },
   {
     name: 'Tes Mengetik',
@@ -37,14 +46,5 @@ export const projects: Project[] = [
     picture: 'random-quote.png',
     repoLink: 'https://github.com/huda-addelson/random-quote',
     demo: 'https://huda-addelson.github.io/random-quote/',
-  },
-  {
-    name: 'TeamFlow',
-    description: 'slicing from figma to website',
-    type: ProjectType.WEB,
-    tags: ['Html', 'Tailwind CSs', 'Javascript', 'Next JS', 'Framer Motion'],
-    picture: 'team-flow.png',
-    repoLink: 'https://github.com/huda-addelson/slicing-teamflow',
-    demo: 'https://teamflow-huda.vercel.app/',
   },
 ];
