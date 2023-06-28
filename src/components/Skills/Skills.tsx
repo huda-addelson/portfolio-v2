@@ -13,6 +13,8 @@ const About = () => {
   const [activeTab, setActiveTab] = useState(category[0]);
   const [isFirstRender, setIsFirstRender] = useState(true);
 
+  console.log(skills, 'skilll');
+
   const handleTabClick = (name: string) => {
     setActiveTab(name);
     if (isFirstRender) setIsFirstRender(false);

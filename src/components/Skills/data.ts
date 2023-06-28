@@ -50,6 +50,12 @@ export const skills: ISkills[] = [
     isMainSkill: true,
   },
   {
+    title: 'Material UI',
+    icon: 'materialui.svg',
+    type: 'UI Framework/Component',
+    isMainSkill: true,
+  },
+  {
     title: 'Node.js (Runtime)',
     icon: 'node.svg',
     type: 'Framework/Library',
@@ -79,6 +85,12 @@ export const skills: ISkills[] = [
     isMainSkill: true,
   },
   {
+    title: 'PostgreSQL',
+    icon: 'postgresql.svg',
+    type: 'DBMS',
+    isMainSkill: true,
+  },
+  {
     title: 'React Hook Form (Library)',
     icon: 'react-hook-form.svg',
     type: 'Framework/Library',
@@ -95,30 +107,26 @@ export const skills: ISkills[] = [
     type: 'Framework/Library',
   },
   {
+    title: 'Mac OS',
+    icon: 'mac.svg',
+    type: 'Operating System',
+    isMainSkill: true,
+  },
+  {
     title: 'GNU/Linux',
     icon: 'linux.png',
     type: 'Operating System',
     isMainSkill: true,
   },
   {
-    title: 'Android',
-    icon: 'android.svg',
+    title: 'Windows',
+    icon: 'win10.svg',
     type: 'Operating System',
     isMainSkill: true,
   },
   {
-    title: 'Windows 10',
-    icon: 'win10.svg',
-    type: 'Operating System',
-  },
-  {
-    title: 'Windows 7',
-    icon: 'win7.png',
-    type: 'Operating System',
-  },
-  {
-    title: 'Windows XP',
-    icon: 'winxp.png',
+    title: 'Android',
+    icon: 'android.svg',
     type: 'Operating System',
   },
 ];
