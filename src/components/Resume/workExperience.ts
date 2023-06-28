@@ -2,6 +2,15 @@ import { IEducation, IWorkExperience } from '.';
 
 const workExperience: IWorkExperience[] = [
   {
+    name: 'Kolibri - Jakarta, Indonesia.',
+    type: 'Fullstack Developer • Pekerja Lapas',
+    tasks: [
+      '• Develop Front End Web using framework Refine Dev, Next.js',
+      '• Develop Back End Web using PostgreSQL, GraphQL',
+    ],
+    timePeriod: 'Mei 2023 - Saat Ini',
+  },
+  {
     name: 'Refactory - Yogyakarta, Indonesia.',
     type: 'Junior Software Engineer • Full-time',
     tasks: [
